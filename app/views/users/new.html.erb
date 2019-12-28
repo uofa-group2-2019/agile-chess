@@ -1,0 +1,14 @@
+<h1>Users New Form</h1>
+# Find me in app/views/users/new.html.erb
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |error| %>
+    <p style="color: red"><%= error %></p>
+  <% end %>
+<% end %>
+
+<%= form_for @user do |f| %>
+  <%= f.text_field :name %>
+
+  <%= f.submit %>
+<% end %>
