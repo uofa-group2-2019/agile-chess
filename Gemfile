@@ -69,3 +69,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Adding Bootstrap for Front-end design
 gem 'bootstrap', '~> 4.4.1'
 gem 'devise'
+
+# Adding rubocop for code syntax / error reduction
+gem 'rubocop', '~> 0.78.0'
