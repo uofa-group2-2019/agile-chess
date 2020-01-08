@@ -72,3 +72,9 @@ gem 'devise'
 
 # Adding rubocop for code syntax / error reduction
 gem 'rubocop', '~> 0.78.0'
+
+# include SimpleForm
+gem 'simple_form'
+
+# include FontAwesome
+gem 'font-awesome-rails'

@@ -1,3 +1,66 @@
 // Place all the styles related to the games controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.black-square {
+  background: #999999;
+}
+
+.board {
+  margin: 20px auto; 
+  border-collapse: collapse;
+  border: 15px solid #595959;
+  width: 674px;
+  height: 674px;
+}
+
+td {
+  width: 80px;
+  height: 80px;
+}
+
+.white {
+  background: white;
+}
+
+.white-square {
+  background: white;
+}
+
+@media (max-width: 1024px) and (min-width:700px) {
+  .board { 
+    display: flex; 
+    order: 1; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  img.selectable-piece {
+    width: 45px;
+    height: 45px;
+  }
+
+  td {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 700px) {
+  .board { 
+    display: flex; 
+    order: 1; 
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
+  td {
+    width: 40px;
+    height: 40px;
+  }
+
+  img {
+    width: 35px;
+    height: 35px;
+  }
+}
