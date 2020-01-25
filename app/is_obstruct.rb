@@ -83,6 +83,14 @@ class Board
     end
   end
 
+  def is_occupied(x, y)
+    if board[x][y] != 0
+      return true
+    else
+      return false
+    end
+  end
+
 end
 
 b = Board.new

@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(version: 2020_01_17_022614) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "whitePlayerID"
+    t.integer "blackPlayerID"
   end
 
   create_table "pieces", force: :cascade do |t|
