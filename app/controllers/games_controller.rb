@@ -16,4 +16,16 @@ class GamesController < ApplicationController
 
   def show
   end
+
+  def update
+    @game = Game.find_by_id(params[:game_id])
+    @game.update_attributes game_params
+    redirect_to game_path(@game)
+  end
+
+  private
+
+  def game_params
+    params.require(:game).permit(:name, :white_player_user_id, :black_player_user_id)
+  end
 end

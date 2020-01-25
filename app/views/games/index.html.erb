@@ -9,12 +9,12 @@
               <div class="row indexgame">
                 <span class="column">
                 <h5 class="text-center"><%= "Game #{game.id}" %></h5>
-                  <% if game.white_player_user_id.blank? %>
+                  <% if game.black_player_user_id.blank? %>
                     <%= simple_form_for game, url: join_game_path(game) do |f| %>
-                      <h6 class="text-center"><%= "Opponent: #{game.black_player.username}" %></h6></span>
-                        <%= f.input :white_player_user_id, as: :hidden, :input_html => { :value => current_user.id } %>
+                      <h6 class="text-center"><%= "Opponent: #{game.white_player.username}" %></h6></span>
+                        <%= f.input :black_player_user_id, as: :hidden, :input_html => { :value => current_user.id } %>
                         <%= f.input :turn_user_id, as: :hidden, :input_html => { :value => current_user.id } %>
-                      <span class="column turn"><%= f.submit "Join as white player", class: "btn btn-secondary" %></span>
+                      <span class="column turn"><%= f.submit "Join Game", class: "btn btn-secondary" %></span>
                     <% end %>
                   <% end %>
               </div>
