@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 2020_01_17_022614) do
     t.integer "y_coord"
     t.integer "game_id"
     t.integer "user_id"
+
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
